@@ -111,22 +111,17 @@ def parse_input_csv(csv_file):
     # Define the normalization map
     normalization_map = {
         "csv-deviceId": "serial_number",
-        "//system/location": "location",
-        "//system/host-name": "hostname",
-        "//system/system-ip": "system_ip",
-        "/10/Loopback0/interface/ip/address": "ip_address_1",
-        "/10/vpn10_lan_subif_name/interface/ip/address": "ip_address_2",
-        "/20/vpn20_lan_subif_name/interface/ip/address": "ip_address_3",
-        "/10/vpn10_lan_subif1_name/interface/description": "description_1",
-        "/20/vpn20_lan_subif1_name/interface/description": "description_2",
-        "/0/vpn0_mpls1_if_name/interface/description": "description_3",
-        "/0/vpn0_mpls2_if_name/interface/description": "description_4",
-        "/10/vpn10_lan_subif_name/interface/vlan_id": "dot1q_vlan_1",
-        "/20/vpn20_lan_subif_name/interface/vlan_id": "dot1q_vlan_2",
-        "/0/vpn0_mpls1_if_name/interface/vlan_id": "dot1q_vlan_3",
-        "/0/vpn0_mpls1_if_name/interface/ip/address": "ip_address_4",
-        "/0/vpn0_mpls2_if_name/interface/vlan_id": "dot1q_vlan_4",
-        "/0/vpn0_mpls2_if_name/interface/ip/address": "ip_address_5"
+        "location": "location",
+        "host-name": "hostname",
+        "system-ip": "system_ip",
+        "Loopback0": "ip_address_1",
+        "LAN10-IP-Address": "ip_address_2",
+        "LAN10-Description": "description_1",
+        "LAN10-VLAN-ID": "dot1q_vlan_1",
+         "WAN1-IP-Addr": "ip_address_3",
+        "WAN1-Descr": "description_3",
+        "WAN2-IP-Addr": "ip_address_4",
+        "WAN2-descr": "description_4"
     }
 
     # Read the CSV file
